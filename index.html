@@ -4,36 +4,37 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
+
+    <form >
       <div>
-        <label>Name: </label>
-        <input type="text" name="" id="" required/>
+        <label for="name">Name: </label>
+        <input type="text" id="name"  name="name" required autocomplete="on"/>
       </div>
       <br />
 
       <div>
-        <label>Age: </label>
-        <input type="number" name="" id=""  max="150"/>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" min="21" max="150"/>
       </div>
       <br />
 
       <div>
         <label>DOB:</label>
-        <input type="date" name="" id="" autofocus />
+        <input type="week" name="" id=""  />
       </div>
       <br />
 
       <div>
         <span for="gender">Gender &nbsp;&nbsp; </span>
 
-        <label for="gender">Male: </label>
-        <input type="radio" name="gender" id="" value="Male"  checked/>
+        <label for="Male">Male: </label>
+        <input type="radio" name="gender" id="Male" value="Male"  checked/>
 
-        <label for="gender">Female: </label>
-        <input type="radio" name="gender" id="" value="Female" />
+        <label for="Female">Female: </label>
+        <input type="radio" name="gender" id="Female" value="Female" />
 
-        <label for="gender">Others: </label>
-        <input type="radio" name="gender" id="" value="Others" />
+        <label for="Others">Others: </label>
+        <input type="radio" name="gender" id="Others" value="Others" />
       </div>
       <br />
 
@@ -44,10 +45,10 @@
         <input type="checkbox" name="matriculation" value="Matriculation" />
 
         <label for="matriculation">Intermediate</label>
-        <input type="checkbox" name="matriculation" value="Intermediate" />
+        <input type="checkbox" name="Intermediate" value="Intermediate" />
 
         <label for="matriculation">Graduation</label>
-        <input type="checkbox" name="matriculation" value="Graduation" />
+        <input type="checkbox" name="Graduation" value="Graduation" />
       </div>
       <br />
 
@@ -57,7 +58,9 @@
           name=""
           id=""
           cols="30"
-          rows="10"
+          rows="20"
+          autofocus
+          autocapitalize="words"
           placeholder="Please give a short description of yourself"
         ></textarea>
       </div>
@@ -132,7 +135,10 @@
         <input type="submit" name="submit" id=""  />
       </div>
       <br />
-
     </form>
+
+    <footer id="footer">
+        This site is built by Newton School Batch 2
+    </footer>
   </body>
 </html>
