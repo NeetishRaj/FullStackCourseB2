@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label>Name: </label>
+        <input type="text" name="" id="" required/>
+      </div>
+      <br />
+
+      <div>
+        <label>Age: </label>
+        <input type="number" name="" id=""  max="150"/>
+      </div>
+      <br />
+
+      <div>
+        <label>DOB:</label>
+        <input type="date" name="" id="" autofocus />
+      </div>
+      <br />
+
+      <div>
+        <span for="gender">Gender &nbsp;&nbsp; </span>
+
+        <label for="gender">Male: </label>
+        <input type="radio" name="gender" id="" value="Male"  checked/>
+
+        <label for="gender">Female: </label>
+        <input type="radio" name="gender" id="" value="Female" />
+
+        <label for="gender">Others: </label>
+        <input type="radio" name="gender" id="" value="Others" />
+      </div>
+      <br />
+
+      <div>
+        <span>Education &nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+        <label for="matriculation">Matriculation </label>
+        <input type="checkbox" name="matriculation" value="Matriculation" />
+
+        <label for="matriculation">Intermediate</label>
+        <input type="checkbox" name="matriculation" value="Intermediate" />
+
+        <label for="matriculation">Graduation</label>
+        <input type="checkbox" name="matriculation" value="Graduation" />
+      </div>
+      <br />
+
+      <div>
+        <label for="description">Write about yourself</label><br />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Please give a short description of yourself"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="color">Favourite color:</label>
+        <input type="color" name="color" value="" />
+      </div>
+      <br />
+
+      <fieldset>
+          <legend>Important Form elements</legend>
+
+        <div>
+          <label for="">Preferred job designation</label>
+          <select name="designation" id="">
+            <optgroup label="Frontend only">
+              <option value="">Web designer</option>
+              <option value="" selected>UI/UX designer</option>
+              <option value="">Front end developer</option>
+            </optgroup>
+            <optgroup label="Full stack positions">
+              <option value="">Web developers</option>
+              <option value="">Full stack developer</option>
+            </optgroup>
+          </select>
+        </div>
+        <br />
+
+        <div>
+          <label for="car">Preferred job designation</label>
+          <input list="car" name="car" id="" value="Default value" />
+          <datalist name="car" id="car">
+            <option value="Alto"></option>
+            <option value="Polo"></option>
+            <option value="Jazz"></option>
+            <option value="Rolls Royce"></option>
+            <option value="Audi A8">Turbo charged V8</option>
+            <option value="BMW M3" />
+          </datalist>
+        </div>
+        <br />
+
+        <div>
+            <label for="resume">Resume</label>
+            <input type="file" name="resume" accept="image/png, image/jpeg, " multiple  />
+        </div><br>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div><br>
+
+        <div>
+            <input type="hidden" id="custId" name="custId" value="3487">
+        </div><br>
+
+        <div>
+            <label for="12_percentage">Intermediate Score%</label>
+            <input type="range" min="0" max="100" step="10">
+        </div><br>
+
+        <div>
+            <label for="">Phone No</label>
+            <input type="tel" name="telephone" disabled value="12345"> 
+        </div><br>
+
+      </fieldset>
+      <legend></legend>
+
+      <div>
+        <input type="submit" name="submit" id=""  />
+      </div>
+      <br />
+
+    </form>
+  </body>
+</html>
