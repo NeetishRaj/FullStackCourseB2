@@ -8,7 +8,7 @@
     <form >
       <div>
         <label for="name">Name: </label>
-        <input type="text" id="name"  name="name" required autocomplete="on"/>
+        <input type="text" id="name"  name="name" required autocomplete="on" placeholder="Enter full name"/>
       </div>
       <br />
 
@@ -42,13 +42,13 @@
         <span>Education &nbsp;&nbsp;&nbsp;&nbsp;</span>
 
         <label for="matriculation">Matriculation </label>
-        <input type="checkbox" name="matriculation" value="Matriculation" />
+        <input type="checkbox" name="matriculation"  id="matriculation"value="Matriculation" />
 
-        <label for="matriculation">Intermediate</label>
-        <input type="checkbox" name="Intermediate" value="Intermediate" />
+        <label for="Intermediate">Intermediate</label>
+        <input type="checkbox" name="Intermediate" id="Intermediate" value="Intermediate" />
 
-        <label for="matriculation">Graduation</label>
-        <input type="checkbox" name="Graduation" value="Graduation" />
+        <label for="Graduation">Graduation</label>
+        <input type="checkbox" name="Graduation" id="Graduation"value="Graduation" />
       </div>
       <br />
 
@@ -65,6 +65,7 @@
         ></textarea>
       </div>
       <br />
+
       <div>
         <label for="color">Favourite color:</label>
         <input type="color" name="color" value="" />
@@ -76,10 +77,11 @@
 
         <div>
           <label for="">Preferred job designation</label>
-          <select name="designation" id="">
+          <select name="designation" id="" placeholder="Select below">
+            <option value="" disabled selected>Select</option>
             <optgroup label="Frontend only">
               <option value="">Web designer</option>
-              <option value="" selected>UI/UX designer</option>
+              <option value="" >UI/UX designer</option>
               <option value="">Front end developer</option>
             </optgroup>
             <optgroup label="Full stack positions">
@@ -128,8 +130,7 @@
             <input type="tel" name="telephone" disabled value="12345"> 
         </div><br>
 
-      </fieldset>
-      <legend></legend>
+      </fieldset><br>
 
       <div>
         <input type="submit" name="submit" id=""  />
