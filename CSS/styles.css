@@ -1,0 +1,18 @@
+html, body {
+    padding: 10px;
+}
+
+
+#aboutus {
+    border: solid 1px grey;
+}
+
+.class-color-teal {
+    color: teal;
+}
+
+.class-color-brown {
+    color: brown;
+}
+
+
