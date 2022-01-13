@@ -19,8 +19,8 @@
       <br />
 
       <div>
-        <label>DOB:</label>
-        <input type="week" name="" id=""  />
+        <label for="DOB">DOB:</label>
+        <input type="week" name="DOB" />
       </div>
       <br />
 
@@ -55,8 +55,7 @@
       <div>
         <label for="description">Write about yourself</label><br />
         <textarea
-          name=""
-          id=""
+          name="selfDescription"
           cols="30"
           rows="20"
           autofocus
@@ -68,7 +67,7 @@
 
       <div>
         <label for="color">Favourite color:</label>
-        <input type="color" name="color" value="" />
+        <input type="color" name="color" value="#000000" />
       </div>
       <br />
 
@@ -77,7 +76,7 @@
 
         <div>
           <label for="">Preferred job designation</label>
-          <select name="designation" id="" placeholder="Select below">
+          <select name="designation" placeholder="Select below">
             <option value="" disabled selected>Select</option>
             <optgroup label="Frontend only">
               <option value="">Web designer</option>
@@ -94,7 +93,7 @@
 
         <div>
           <label for="car">Preferred job designation</label>
-          <input list="car" name="car" id="" value="Default value" />
+          <input list="car" name="car" value="Default value" />
           <datalist name="car" id="car">
             <option value="Alto"></option>
             <option value="Polo"></option>
@@ -117,17 +116,17 @@
         </div><br>
 
         <div>
-            <input type="hidden" id="custId" name="custId" value="3487">
+            <input type="hidden" id="customerId" name="customerId" value="3487">
         </div><br>
 
         <div>
-            <label for="12_percentage">Intermediate Score%</label>
-            <input type="range" min="0" max="100" step="10">
+            <label for="marks">Intermediate Score%</label>
+            <input type="range" name="marks" min="0" max="100" step="10" value="30">
         </div><br>
 
         <div>
-            <label for="">Phone No</label>
-            <input type="tel" name="telephone" disabled value="12345"> 
+            <label for="telephone">Phone No</label>
+            <input type="tel" name="telephone" value="12345"> 
         </div><br>
 
       </fieldset><br>
@@ -139,7 +138,7 @@
     </form>
 
     <footer id="footer">
-        This site is built by Newton School Batch 2
+        This form is built by Newton School Batch 2
     </footer>
   </body>
 </html>
