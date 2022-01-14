@@ -1,0 +1,12 @@
+/* input:focus {
+    border: 5px dotted red
+} */
+
+/* input:checked {
+    Assignment
+   // border: 5px dotted red
+} */
+
+input:invalid {
+    border: 5px solid red;
+}

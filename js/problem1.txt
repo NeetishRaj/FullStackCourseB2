@@ -1,7 +1,0 @@
-/*
- * Problem: Given a string make all the
- * first and last letters of each word
- * capital and rest in lowercase, keep
- * words with one or two letter in
- * small letters  
- */
