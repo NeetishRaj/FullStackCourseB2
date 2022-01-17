@@ -1,11 +1,16 @@
 html {
 }
 body {
+    background-image: url("../assets/texture.jpg");
+    background-repeat: repeat;
+    background-attachment: scroll;
 }
 div.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    backdrop-filter: blur(1px);
 }
 
 div.container {
