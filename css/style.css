@@ -12,8 +12,95 @@ div.container {
 
     width: 760px;
     overflow: hidden;
-    background-color: #eee;
+    background-color: ;
 }
+
+header, footer {
+    display: flex;
+    justify-content: center;
+
+    background-color: black;
+    color: white;
+
+    border: 20px outset black;
+}
+
+header > h1 {
+    padding: 20px;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-end;
+
+    padding: 14px;
+}
+
+nav ul li {
+    margin-left: 20px;
+
+    border: 2px solid white;
+    padding: 5px;
+
+    border-radius: 5px;
+}
+
+nav ul a, footer > div > a{
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+
+div.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+aside {
+ width: 260px;
+
+ padding: 20px;
+}
+
+aside > div.aside-heading {
+    display: flex;
+    justify-content: center;
+}
+
+aside div.aside-item {
+    border-left: 10px solid #333;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 10px solid #333;
+    margin-bottom: 50px;
+}
+
 aside figure > img {
-    width: 240px;
+    width: 180px;
+    object-fit: contain;
+}
+
+main {
+    width: 500px;
+
+    padding: 20px;
+
+    border-left: 1px solid black;
+}
+
+main > section {
+    margin-bottom: 50px;
 }
