@@ -1,0 +1,12 @@
+html {
+    justify-content: center;
+}
+body {
+
+    width: 760px;
+    background-color: #eee;
+}
+
+aside figure > img {
+    width: 240px;
+}
