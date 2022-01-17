@@ -1,12 +1,19 @@
 html {
-    justify-content: center;
 }
 body {
-
-    width: 760px;
-    background-color: #eee;
+}
+div.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+div.container {
+
+    width: 760px;
+    overflow: hidden;
+    background-color: #eee;
+}
 aside figure > img {
     width: 240px;
 }
