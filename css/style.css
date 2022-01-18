@@ -1,7 +1,6 @@
 html {
 }
 body {
-    background-image: url("../assets/texture.jpg");
     background-repeat: repeat;
     background-attachment: scroll;
 }
@@ -14,20 +13,20 @@ div.wrapper {
 }
 
 div.container {
-
     width: 760px;
     overflow: hidden;
-    background-color: ;
 }
 
 header, footer {
     display: flex;
     justify-content: center;
-
+    
     background-color: black;
     color: white;
-
+    
     border: 20px outset black;
+    
+    background: radial-gradient(black, white)
 }
 
 header > h1 {
@@ -37,7 +36,6 @@ header > h1 {
 nav {
     height: 60px;
     width: 100%;
-
     background-color: black;
 }
 
@@ -61,10 +59,57 @@ nav ul li {
     border-radius: 5px;
 }
 
+nav ul li:hover {
+    border-color: orange;
+}
+
+nav ul li>a:hover {
+    color: orange;
+}
+
+
 nav ul a, footer > div > a{
     font-size: 22px;
     text-decoration: none;
     color: white;
+}
+
+nav div.nav-wrapper {
+    position: relative;
+}
+
+nav #contactButton:hover div.contact-dropdown {
+    display: block;
+}
+
+nav div.contact-dropdown {
+    background-color: black;
+    color: white;
+
+    border-left: 5px solid grey;
+
+    padding: 0 20px 20px 20px;
+    text-align: center;
+
+    display: none;
+
+    position: absolute;
+    right: 10px;
+    top: 61px;
+    z-index: 1;
+
+    width: 200px;
+    height: 200px;
+}
+
+nav div.contact-dropdown a {
+    font-size: 16px;
+}
+
+nav div.contact-dropdown > h3 {
+    border-bottom: 5px solid white;
+
+    padding: 10px;
 }
 
 
@@ -93,6 +138,10 @@ aside div.aside-item {
     margin-bottom: 50px;
 }
 
+aside div.aside-item:hover {
+    /* box-shadow: 20px 20px 30px 1px black; */
+}
+
 aside figure > img {
     width: 180px;
     object-fit: contain;
@@ -108,4 +157,22 @@ main {
 
 main > section {
     margin-bottom: 50px;
+}
+
+.chat-button-wrapper {
+    display: none;
+
+    width: 70px;
+    position: fixed;
+    right:30px;
+    bottom: 100px;
+    z-index: 1;
+}
+
+.chat-button {
+
+    background-color: red;
+    
+    border: 10px solid red;
+    border-radius: 50%;
 }
