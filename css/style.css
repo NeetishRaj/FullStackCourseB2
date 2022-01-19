@@ -1,9 +1,8 @@
-html {
+html, body {
+    padding: 0;
+    margin: 0;
 }
-body {
-    background-repeat: repeat;
-    background-attachment: scroll;
-}
+
 div.wrapper {
     display: flex;
     justify-content: center;
