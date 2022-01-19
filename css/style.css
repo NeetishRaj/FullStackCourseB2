@@ -19,14 +19,15 @@ div.container {
 
 header, footer {
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    padding: 20px;
     
     background-color: black;
     color: white;
     
     border: 20px outset black;
     
-    background: radial-gradient(black, white)
+    background: radial-gradient(black, blue)
 }
 
 header > h1 {
@@ -35,7 +36,7 @@ header > h1 {
 
 nav {
     height: 60px;
-    width: 100%;
+    width: 100vw;
     background-color: black;
 }
 
