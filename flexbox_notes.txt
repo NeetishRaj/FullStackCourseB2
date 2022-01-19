@@ -1,0 +1,34 @@
+Flexbox
+####################
+Its a way to organize content in 1 dimension (either row or column).
+Most common use of display:flex, justify-content & align-items is to position HTML elements perfectly in the center.
+
+container(div, span, or any semantic html element)
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+
+items (div, span , img, a, any HTML element)
+	flex-grow:
+	flex-shrink:
+	flex-basis:
+	align-self: (applicable when flex-direction: row | row-reverse)
+	justify-self: (applicable when flex-direction: column | column-reverse)
+	
+Top interview questions in Flexbox
+
+1. Explain the below line of CSS
+	flex: 1 1 auto;
+	flex: 0 1 70px;
+
+2. How to center the contents in a container using flexbox?
+
+Answer: 
+    div.flexbox-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
