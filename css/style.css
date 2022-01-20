@@ -1,178 +1,91 @@
-html, body {
+
+
+
+:root, body {
+    font-size: 20px;
     padding: 0;
+    margin:0
+}
+
+.container {
+    border: 2px dotted red;
+    height:50vh;
+    width:50vw;
+    /* margin: 0 auto; */
+
+    background-color: lightgrey;
+    
+}
+
+.container:nth-child(1) {
+    /* font-size: 40px; */
+}
+.container:nth-child(2) {
+    background-color: inherit;
+}
+
+.item {
+    /* border: 2px dotted blue; */
+    background-color: teal;
+    margin:10px;
+}
+
+.item:first-child {
+    width: 50vmin;
+}
+
+.item:nth-child(2) {
+    width: 3rem; /*(1em = 20px) */
+}
+
+
+
+
+
+
+/* em and rem
+##### */
+/* :root {
+    font-size: 20px;
+}
+
+.container {
+    border: 2px dotted red;
+}
+
+.container:nth-child(1) {
+     font-size: 40px; 
+}
+.container:nth-child(2) {
+    font-size: 40px;
+}
+
+.item {
+    border: 2px dotted blue;
+    background-color: teal;
+    margin:10px;
+}
+
+.item:first-child {
+    width: 3em;
+}
+
+.item:nth-child(2) {
+    width: 3rem;
+} */
+
+
+
+
+
+/* To undersdant vmin/vmax */
+/* :root, body {
     margin: 0;
+    padding: 0;
 }
-
-div.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    backdrop-filter: blur(1px);
-}
-
-div.container {
-    width: 760px;
-    overflow: hidden;
-}
-
-header, footer {
-    display: flex;
-    justify-content:center;
-    padding: 20px;
-    
-    background-color: black;
-    color: white;
-    
-    border: 20px outset black;
-    
-    background: radial-gradient(black, blue)
-}
-
-header > h1 {
-    padding: 20px;
-}
-
-nav {
-    height: 60px;
-    width: 100%;
-    background-color: black;
-}
-
-nav ul {
-    list-style-type: none;
-
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: flex-end;
-
-    padding: 14px;
-}
-
-nav ul li {
-    margin-left: 20px;
-
-    border: 2px solid white;
-    padding: 5px;
-
-    border-radius: 5px;
-}
-
-nav ul li:hover {
-    border-color: orange;
-}
-
-nav ul li>a:hover {
-    color: orange;
-}
-
-
-nav ul a, footer > div > a{
-    font-size: 22px;
-    text-decoration: none;
-    color: white;
-}
-
-nav div.nav-wrapper {
-    position: relative;
-}
-
-nav #contactButton:hover div.contact-dropdown {
-    display: block;
-}
-
-nav div.contact-dropdown {
-    background-color: black;
-    color: white;
-
-    border-left: 5px solid grey;
-
-    padding: 0 20px 20px 20px;
-    text-align: center;
-
-    display: none;
-
-    position: absolute;
-    right: 10px;
-    top: 61px;
-    z-index: 1;
-
-    width: 200px;
-    height: 200px;
-}
-
-nav div.contact-dropdown a {
-    font-size: 16px;
-}
-
-nav div.contact-dropdown > h3 {
-    border-bottom: 5px solid white;
-
-    padding: 10px;
-}
-
-
-div.main-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-aside {
- width: 260px;
-
- padding: 20px;
-}
-
-aside > div.aside-heading {
-    display: flex;
-    justify-content: center;
-}
-
-aside div.aside-item {
-    border-left: 10px solid #333;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-right: 10px solid #333;
-    margin-bottom: 50px;
-}
-
-aside div.aside-item:hover {
-    /* box-shadow: 20px 20px 30px 1px black; */
-}
-
-aside figure > img {
-    width: 180px;
-    object-fit: contain;
-}
-
-main {
-    width: 500px;
-
-    padding: 20px;
-
-    border-left: 1px solid black;
-}
-
-main > section {
-    margin-bottom: 50px;
-}
-
-.chat-button-wrapper {
-    display: none;
-
-    width: 70px;
-    position: fixed;
-    right:30px;
-    bottom: 100px;
-    z-index: 1;
-}
-
-.chat-button {
-
+.circle {
     background-color: red;
-    
-    border: 10px solid red;
     border-radius: 50%;
-}
+    width: 100vmin;
+    height: 100vmin;
+} */
