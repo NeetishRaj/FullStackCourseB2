@@ -1,0 +1,54 @@
+CSS Units
+######################
+
+There are two types of CSS Units which are:
+
+1. Absolute Length Unit (most common is pixel)
+
+px - Pixel
+Q -  Quarter-millimeter
+pt - Point
+pc - Picas
+in - Inch
+cm - Centimeter
+mm - Millimeter
+
+
+2. Relative Length Unit (most commonly used in order is %, rem, vw, vh, em, vmin, vmax)
+
+% 	- 	It takes the allocated percentage of the parent/container.
+em 	-	Font size of immediate parent 	(pixel = Font-size of parent * no of em units)
+rem	- 	Font size of root element (pixel = Font-size of root * no of em units)
+ex	- 	size something in relation to the height of your text's lowercase letters.
+ch	-  	characters width
+lh	- 	size something in relation to the line height of your text.
+vw	-	view port width
+vh	- 	viewport height	
+vmin-	minimum (view-port-width, view-port-height)
+vmax- 	maximum (view-port-width, view-port-height)
+
+
+
+
+What is viewport concept in CSS?
+
+
+
+Auto, Inherit, Initial, Revert and Unset Values for CSS Properties
+###################################################################
+
+Very nice explanation: https://bitsofco.de/initial-inherit-unset-and-revert/
+
+Auto: automatically calculate the required  units (Remember the example of margin: 0 auto;)
+
+Inherit: Take the property values from the parent.
+
+Initial: whatever value thatwas iniitially provided by the browser
+
+Unset: Its either initial or inherit.
+
+Revert: It reverts the value back to the initial value.
+	if(inherited) {revert to inherited property }
+	else { revert to its initial value }
+
+max-width, min-width, max-height, min-height
