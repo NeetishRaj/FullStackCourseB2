@@ -1,92 +1,138 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root, body {
-    font-size: 20px;
-    padding: 0;
-    margin:0
-}
-
-.container {
-    border: 2px dotted red;
-    height:50vh;
-    width:50vw;
-    /* margin: 0 auto; */
-
-    background-color: lightgrey;
-    color: red;
-    
-}
-
-.container:nth-child(1) {
-    /* font-size: 40px; */
-}
-.container:nth-child(2) {
-    background-color: inherit;
-}
-
-.item {
-    /* border: 2px dotted blue; */
-    background-color: teal;
-    margin:10px;
-}
-
-.item:first-child {
-    width: 50vmin;
-}
-
-.item:nth-child(2) {
-    width: 3rem; /*(1em = 20px) */
-}
-
-
-
-
-
-
-/* em and rem
-##### */
-/* :root {
-    font-size: 20px;
-}
-
-.container {
-    border: 2px dotted red;
-}
-
-.container:nth-child(1) {
-     font-size: 40px; 
-}
-.container:nth-child(2) {
-    font-size: 40px;
-}
-
-.item {
-    border: 2px dotted blue;
-    background-color: teal;
-    margin:10px;
-}
-
-.item:first-child {
-    width: 3em;
-}
-
-.item:nth-child(2) {
-    width: 3rem;
-} */
-
-
-
-
-
-/* To undersdant vmin/vmax */
-/* :root, body {
     margin: 0;
     padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    --bio-section-bg: #861CEB;
+    --education-section-bg: #511DF5;
+    --project-section-bg: #262CDE;
+    --skill-section-bg: #1D5DF5;
+    --personal-section-bg: #1C90EB;
+
+    --total-width: 760px;
+    --left-section-width: 300px;
+    --right-section-width: calc(var(--total-width) - var(--left-section-width));
+
+    --total-height: 900px;
+
+    color: white;
+
 }
-.circle {
-    background-color: red;
+
+.wrapper {
+    width: 100vw;
+
+    background-image: url("../assets/texture.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
+    padding: 50px;
+}
+
+.container {
+    background-color: grey;
+    max-width: var(--total-width);
+    min-height: var(--total-height);
+
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 auto;
+
+    border: 5px solid white;
+}
+
+.left-section {
+    width: var(--left-section-width);
+    height: 100%;
+}
+
+.right-section {
+    width: var(--right-section-width);
+    height: 100%;
+}
+
+.bio-section {
+    background-color: var(--bio-section-bg);
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-section .display-pic {
+    width: 180px;
+    height: 180px;
+
+    border: 5px solid white;
     border-radius: 50%;
-    width: 100vmin;
-    height: 100vmin;
-} */
+
+    box-shadow: 0 0  20px 1px white;
+    
+    overflow: hidden;
+    
+    margin-bottom: 20px;
+    cursor:crosshair;
+}
+
+.bio-section .display-pic img {
+    margin-top: -30px;
+    width: 200px;
+    height: auto;
+
+    object-fit:fill;
+}
+
+.bio-section .contact-info {
+
+}
+
+.bio-section .contact-info .name{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    
+    margin-bottom: 8px;
+
+
+}
+.bio-section .contact-info .name .designation {
+    font-weight: lighter;
+    font-size: smaller;
+    letter-spacing: 0;
+}
+.bio-section .contact-info .email {
+    border-top: 5px solid white;
+    padding-top: 10px;
+}
+
+.bio-section .contact-info .email, .bio-section .contact-info .mobile {
+    font-weight: lighter;
+    font-size: smaller;
+
+    display: flex;
+    justify-content: center;
+}
+.education-section {
+    background-color: var(--education-section-bg);
+    height: 500px;
+}
+
+.projects-section {
+    background-color: var(--project-section-bg);
+    height: 400px;
+
+}
+.skills-section {
+    background-color: var(--skill-section-bg);
+    height: 250px;
+}
+.personal-section {
+    background-color: var(--personal-section-bg);
+    height: 250px;
+}
