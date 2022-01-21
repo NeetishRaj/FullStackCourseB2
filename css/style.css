@@ -89,6 +89,11 @@
     object-fit:fill;
 }
 
+.bio-section .display-pic img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+}
+
 .bio-section .contact-info {
 
 }
